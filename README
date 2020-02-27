@@ -3,5 +3,11 @@ Maxime VEMCLEFS
 
 Le projet consiste à coder un puzzle de Mondrian
 
+Un puzzle de mondrian consiste à colorier, avec les couleurs rouge et bleu, un plan partitionné en rectangles.
+Au début du jeu, tous les rectangles sont blancs, et les lignes partitionnant le plan peuvent être de couleur noire, rouge, bleu ou violet. Le joueur doit choisir une couleur de remplissage pour chaque rectangle, en respectant les contraintes suivantes. 
+Pour chaque ligne de séparation, on considère l’ensemble des rectangles dont le bord se superpose à celle-ci :
 
+Si la ligne est rouge ou bleue, cet ensemble doit contenir strictement plus de rectangles de même couleur que la ligne, que de rectangles de l’autre couleur.
+Si la ligne est violette, l’ensemble doit contenir autant de rectangles d’une couleur que de l’autre.
+Si la ligne est noire, il n’y a aucune contrainte sur ces rectangles.
 Compiler avec la commande make puis exécuter le fichier mondrian.
